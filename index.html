@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>جمعية أصدقاء المريض - يعبد / جنين</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      direction: rtl;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header, footer {
+      background: linear-gradient(90deg, #0077b6, #00b4d8);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+    h1, h2 {
+      margin: 0.5rem 0;
+    }
+    section {
+      padding: 2rem;
+      animation: fadeInUp 1s ease-in;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 1rem 0;
+      padding: 1.5rem;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    form input, form select, form button {
+      width: 100%;
+      margin-top: 0.75rem;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    form button {
+      background: #0077b6;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      font-size: 0.9rem;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>جمعية أصدقاء المريض</h1>
+    <p>يعبد / جنين - رعايتكم مسؤوليتنا</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>من نحن</h2>
+      <div class="card">
+        <p>   نحن جمعية صحية مجتمعية تقدم أفضل خدمات الرعاية الصحية لأهالي بلدة يعبد والمناطق المجاورة، بتجهيزات متطورة وكادر طبي مميز تُعد الجمعية واحدة من أهم المؤسسات الصحية الأهلية في المنطقة، حيث تجمع بين الرؤية الإنسانية، والكفاءة الطبية، والتطور التكنولوجي لتقديم خدمات صحية متقدمة لأهالي بلدة يعبد والقرى المجاورة. </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>الأقسام الطبية</h2>
+      <div class="card">طب عام</div>
+      <div class="card">أطفال</div>
+      <div class="card">نسائية</div>
+      <div class="card">باطنية</div>
+      <div class="card">جلدية</div>
+      <div class="card">أسنان</div>
+      <div class="card">مختبر</div>
+    </section>
+
+    <section>
+      <h2>الأطباء</h2>
+      <div class="card">
+        <strong>د. أحمد يوسف</strong><br>
+        تخصص: باطني | دوام: الأحد - الأربعاء
+      </div>
+      <div class="card">
+        <strong>د. مريم الحسن</strong><br>
+        تخصص: أطفال | دوام: الإثنين - الخميس
+      </div>
+    </section>
+
+    <section>
+      <h2>احجز موعدك</h2>
+      <div class="card">
+        <form>
+          <input type="text" placeholder="الاسم الكامل" required>
+          <input type="tel" placeholder="رقم الجوال" required>
+          <select>
+            <option disabled selected>اختر القسم</option>
+            <option>طب عام</option>
+            <option>أطفال</option>
+            <option>نسائية</option>
+          </select>
+          <input type="date" required>
+          <input type="time" required>
+          <button type="submit">حجز</button>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <h2>الاستعلام عن نتيجة المختبر</h2>
+      <div class="card">
+        <form>
+          <input type="text" placeholder="رقم الهوية أو الملف الطبي" required>
+          <input type="text" placeholder="رقم العينة" required>
+          <button type="submit">عرض النتيجة</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 جمعية أصدقاء المريض - يعبد / جنين</p>
+  </footer>
+</body>
+</html>
